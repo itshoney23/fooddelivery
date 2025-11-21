@@ -18,6 +18,9 @@ const Navbar = ({setShowLogin}) => {
         setToken("")
         navigate("/")
     }
+    const admin = () =>{
+        navigate("https://itshoney23-fooddelivery.vercel.app/")
+    }
 
 
   return (
@@ -44,6 +47,8 @@ const Navbar = ({setShowLogin}) => {
                     <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt=''/><p>Orders</p></li>
                     <hr/>
                     <li onClick={logout}><img src={assets.logout_icon} alt=''/><p>Logout</p></li>
+                                        <li onClick={logout}><img src={assets.logout_icon} alt=''/><p>Admin</p></li>
+
                 </ul>
              </div>}
          </div>
