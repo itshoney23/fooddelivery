@@ -11,7 +11,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import { toast } from 'react-toastify';
 
 
-
 const App = () => {
 
   // const url = "http://localhost:4000"
