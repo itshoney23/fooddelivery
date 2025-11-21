@@ -14,7 +14,8 @@ import { toast } from 'react-toastify';
 
 const App = () => {
 
-  const url = "http://localhost:4000"
+  // const url = "http://localhost:4000"
+    const url = "https://fooddelivery-9wld.onrender.com"
 
   return (
     <div>
