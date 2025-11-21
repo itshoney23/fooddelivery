@@ -31,7 +31,9 @@ app.use("/api/order",orderRouter)
 app.get("/",(req,res)=>{
     res.send("Honey Happy To say API Working")
 })
-
+app.get("/hikaro",(req,res)=>{
+    res.send("Honey Happy To say API Working")
+})
 app.listen(port,()=>{
     console.log(`Server Started on http://localhost:${port}`)
 })
