@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import './Navbar.css' 
 
 import { assets } from '../../assets/assets'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, redirect, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({setShowLogin}) => {
@@ -18,9 +18,9 @@ const Navbar = ({setShowLogin}) => {
         setToken("")
         navigate("/")
     }
-    const admin = () =>{
-        navigate("https://itshoney23-fooddelivery.vercel.app/")
-    }
+    // const admin = () =>{
+    //     redirect("https://itshoney23-fooddelivery.vercel.app/")
+    // }
 
 
   return (
@@ -47,7 +47,7 @@ const Navbar = ({setShowLogin}) => {
                     <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt=''/><p>Orders</p></li>
                     <hr/>
                     <li onClick={logout}><img src={assets.logout_icon} alt=''/><p>Logout</p></li>
-                                        <li onClick={admin}><img src={assets.logout_icon} alt=''/><p>Admin</p></li>
+                                        {/* <li onClick={admin}><img src={assets.logout_icon} alt=''/><p>Admin</p></li> */}
 
                 </ul>
              </div>}
